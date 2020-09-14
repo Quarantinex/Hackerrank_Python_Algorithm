@@ -17,8 +17,8 @@ matrix_list = [[[8, 1, 6], [3, 5, 7], [4, 9, 2]],
                [[2, 7, 6], [9, 5, 1], [4, 3, 8]]]
 
 
-def get_min_cost(mat: list) -> int:
-    cost_list = [sys.maxsize] * len(matrix_list)
+def get_min_cost(mat):
+    cost_list = []
     for ref_mat in matrix_list:
         cost = 0
         for x in range(0, len(mat)):
